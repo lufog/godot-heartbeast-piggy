@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://p5i8fxrxk1cb"]
+
+[ext_resource type="PackedScene" uid="uid://k4pwxrmg6m6w" path="res://pig.tscn" id="1_xa06v"]
+[ext_resource type="PackedScene" uid="uid://5deo3fffnpup" path="res://apple.tscn" id="2_jwwx7"]
+
+[node name="World" type="Node"]
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.0666667, 0.0666667, 0.0666667, 1)
+metadata/_edit_lock_ = true
+
+[node name="Pig" parent="." instance=ExtResource("1_xa06v")]
+position = Vector2(164, 79)
+
+[node name="Apple" parent="." instance=ExtResource("2_jwwx7")]
+position = Vector2(221, 82)
+
+[node name="Apple2" parent="." instance=ExtResource("2_jwwx7")]
+position = Vector2(240, 53)
+
+[node name="Apple3" parent="." instance=ExtResource("2_jwwx7")]
+position = Vector2(116, 102)
+
+[node name="Apple4" parent="." instance=ExtResource("2_jwwx7")]
+position = Vector2(116, 47)
